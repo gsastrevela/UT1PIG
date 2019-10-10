@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>resto de elementos</h1>
+    <h2>elemento div</h2>
+    <div>esto es una capa.se utiliza para estructurar el contenido</div>
+
+    <h2>elemento audio</h2>
+    <audio id="audio1" controls>
+        <source src="audio/abc.mp3" type="audio/mpeg">
+        <source src="audio/abc.wav" type="audio/wave">
+        <source src="audio/abc.ogg" type="audio/ogg">
+        tu navegador no soporta audio html5
+        </audio>
+
+    <h2>elemento de tipo progress</h2>
+    <progress max="100" value="80"></progress>
+
+    <h2>elemento canvas</h2>
+    <canvas id="canvas1" widht="300" height="150" style="border: 1px solid black;">
+    tu navegador no soporta canvas
+    </canvas>
+
+    <script>
+    var canvas = document.getElementById("canvas1");
+    var contexto=canvas.getContext("2d");
+    contexto.fillStyle="#FF0000";
+    contexto.fillRect(0,0,150,75);
+    
+    </script>
+</body>
+</html>
